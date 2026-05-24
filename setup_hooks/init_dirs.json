@@ -1,0 +1,10 @@
+{
+  "name": "init-directories",
+  "description": "创建必要的运行时目录",
+  "command": "mkdir -p recordings cloud_history cloud_exec sm_rules jump_rules",
+  "enabled": true,
+  "trigger": "both",
+  "run_once": false,
+  "timeout_seconds": 5,
+  "order": 5
+}

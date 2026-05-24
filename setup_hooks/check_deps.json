@@ -1,0 +1,10 @@
+{
+  "name": "check-dependencies",
+  "description": "验证系统依赖是否安装 (xdotool, pynput, pillow, pyserial)",
+  "command": "python3 -c \"\nimport sys; errors = []\ntry:\n    from pynput import mouse; print('pynput: OK')\nexcept ImportError:\n    errors.append('pynput')\ntry:\n    from PIL import ImageGrab; print('pillow: OK')\nexcept ImportError:\n    errors.append('pillow')\ntry:\n    import serial; print('pyserial: OK')\nexcept ImportError:\n    errors.append('pyserial')\nif sys.platform == 'linux':\n    import shutil\n    if shutil.which('xdotool'):\n        print('xdotool: OK')\n    else:\n        errors.append('xdotool')\nif errors:\n    print('MISSING:', ', '.join(errors))\n    sys.exit(1)\nprint('All dependencies OK')\n\"",
+  "enabled": true,
+  "trigger": "init",
+  "run_once": false,
+  "timeout_seconds": 30,
+  "order": 10
+}

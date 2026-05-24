@@ -1,0 +1,53 @@
+{
+  "device_id": "",
+  "debug": false,
+  "cloud": {
+    "enabled": false,
+    "server_url": "",
+    "api_key": "",
+    "poll_interval_seconds": 10,
+    "heartbeat_interval_seconds": 30,
+    "history_dir": "./cloud_history",
+    "exec_dir": "./cloud_exec"
+  },
+  "bambu": {
+    "appimage_path": "./bambu stdio/BambuStudio_ubuntu-22.04-v02.07.00.55-20260514170313.AppImage",
+    "launch_recording": "打开bambu stdio",
+    "cancel_update_recording": "取消更新",
+    "confirm_region": "启动确认",
+    "confirm_color": "#00AE42",
+    "startup_timeout_s": 120.0
+  },
+  "print": {
+    "upload_task_recording": "上传打印任务",
+    "start_print_recording": "daying",
+    "default_timeout_minutes": 120,
+    "extra_timeout_minutes": 10,
+    "status_check_interval_s": 5.0,
+    "complete_region": "",
+    "complete_color": "#00FF00",
+    "task_branch_a": {
+      "upload_task_recording": "",
+      "start_print_recording": "",
+      "complete_region": "",
+      "complete_color": "#00FF00",
+      "default_timeout_minutes": 120,
+      "extra_timeout_minutes": 10
+    },
+    "task_branch_b": {
+      "upload_task_recording": "",
+      "start_print_recording": "",
+      "complete_region": "",
+      "complete_color": "#00FF00",
+      "default_timeout_minutes": 120,
+      "extra_timeout_minutes": 10
+    }
+  },
+  "mcu": {
+    "enabled": false,
+    "port": "/dev/ttyUSB0",
+    "baudrate": 115200,
+    "timeout_s": 5.0,
+    "complete_command": "PRINT_COMPLETE\n"
+  }
+}

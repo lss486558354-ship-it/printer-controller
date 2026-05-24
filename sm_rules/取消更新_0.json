@@ -1,0 +1,15 @@
+{
+  "state": "取消更新",
+  "index": 0,
+  "target": "空闲",
+  "enabled": true,
+  "conditions": [
+    {
+      "region_label": "qidongl",
+      "color": "#00AE42",
+      "tolerance": 20,
+      "mode": "match",
+      "enabled": true
+    }
+  ]
+}

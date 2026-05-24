@@ -1,0 +1,15 @@
+{
+  "state": "qdqr",
+  "index": 0,
+  "target": "取消更新",
+  "enabled": true,
+  "conditions": [
+    {
+      "region_label": "启动确认",
+      "color": "#00AE42",
+      "tolerance": 20,
+      "mode": "match",
+      "enabled": true
+    }
+  ]
+}

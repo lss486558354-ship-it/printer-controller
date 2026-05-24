@@ -1,0 +1,22 @@
+{
+  "state": "空闲",
+  "index": 0,
+  "target": "打印任务1",
+  "enabled": true,
+  "conditions": [
+    {
+      "region_label": "bambu stdio_start",
+      "color": "#00AE42",
+      "tolerance": 20,
+      "mode": "match",
+      "enabled": true
+    },
+    {
+      "region_label": "bambu stdio_start",
+      "color": "#000000",
+      "tolerance": 20,
+      "mode": "match",
+      "enabled": true
+    }
+  ]
+}

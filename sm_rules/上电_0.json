@@ -1,0 +1,15 @@
+{
+  "state": "上电",
+  "index": 0,
+  "target": "qdqr",
+  "enabled": true,
+  "conditions": [
+    {
+      "region_label": "bambu stdio_start",
+      "color": "#00AE42",
+      "tolerance": 20,
+      "mode": "match",
+      "enabled": true
+    }
+  ]
+}

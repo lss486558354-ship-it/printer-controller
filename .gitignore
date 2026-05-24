@@ -1,0 +1,51 @@
+# 本地设备状态（不提交）
+.device_state.json
+config.local.json
+
+# 云端运行时目录
+cloud_history/
+cloud_exec/
+
+# 升级备份
+backup_*/
+
+# 日志
+controller.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# 备份文件
+*.bak
+
+# 旧格式录制（仅保留 JSON）
+*.ahk
+
+# 临时/测试文件
+1.txt
+2.sh
+fix_bs.sh
+2828287.md
+
+# 配置备份
+config.json.bak
+cloud_config.json
+
+# 外部二进制
+bambu stdio/
+
+# Claude 本地配置（路径不可移植）
+.claude/
+memory/
+
+# 个人文档
+完成任务提示音.md
+
+# 异常目录
+-p/

@@ -1,0 +1,22 @@
+[Unit]
+Description=Mouse Cloud Service — 云端命令轮询与文件分发
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%u
+WorkingDirectory=%h/auto
+ExecStart=%h/auto/venv/bin/python %h/auto/cloud_service.py
+Restart=on-failure
+RestartSec=15
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=mouse-cloud
+
+# 安全加固（可选）
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

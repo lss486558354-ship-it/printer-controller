@@ -1,0 +1,22 @@
+{
+  "name": "取消更新",
+  "created": "2026-05-13 19:41:28",
+  "duration_ms": 11023,
+  "event_count": 2,
+  "events": [
+    {
+      "type": "press",
+      "button": "left",
+      "x": 1583,
+      "y": 940,
+      "time_ms": 805
+    },
+    {
+      "type": "release",
+      "button": "left",
+      "x": 1583,
+      "y": 940,
+      "time_ms": 979
+    }
+  ]
+}

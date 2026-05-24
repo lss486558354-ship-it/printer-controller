@@ -1,0 +1,84 @@
+{
+  "interval_ms": 200,
+  "regions": [
+    {
+      "label": "1",
+      "x1": 1578,
+      "y1": 651,
+      "x2": 1617,
+      "y2": 684,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "2",
+      "x1": 1173,
+      "y1": 599,
+      "x2": 1189,
+      "y2": 609,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "3",
+      "x1": 1316,
+      "y1": 695,
+      "x2": 1404,
+      "y2": 719,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "bambu stdio_start",
+      "x1": 1026,
+      "y1": 1401,
+      "x2": 1066,
+      "y2": 1435,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "更新确认",
+      "x1": 1481,
+      "y1": 927,
+      "x2": 1538,
+      "y2": 946,
+      "enabled": true,
+      "rules": [
+        {
+          "color": "#00FF00",
+          "tolerance": 20,
+          "recording": "取消更新",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "label": "启动确认",
+      "x1": 1236,
+      "y1": 643,
+      "x2": 1274,
+      "y2": 701,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "qidongl",
+      "x1": 2104,
+      "y1": 96,
+      "x2": 2123,
+      "y2": 108,
+      "enabled": true,
+      "rules": []
+    },
+    {
+      "label": "666",
+      "x1": 1487,
+      "y1": 934,
+      "x2": 1527,
+      "y2": 940,
+      "enabled": true,
+      "rules": []
+    }
+  ]
+}

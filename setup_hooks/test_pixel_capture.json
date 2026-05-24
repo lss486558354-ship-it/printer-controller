@@ -1,0 +1,10 @@
+{
+  "name": "test-pixel-capture",
+  "description": "测试屏幕截图功能是否可用（Xorg 检查）",
+  "command": "python3 -c \"\nfrom pixel_monitor import _capture_region_rgb\ndata = _capture_region_rgb(0, 0, 10, 10)\nif data and len(data) > 0:\n    print(f'截图成功: {len(data)} bytes')\nelse:\n    print('截图失败: 无数据返回 (可能需要在 Xorg 下运行)')\n    exit(1)\n\"",
+  "enabled": true,
+  "trigger": "init",
+  "run_once": true,
+  "timeout_seconds": 10,
+  "order": 20
+}
