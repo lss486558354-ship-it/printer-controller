@@ -27,6 +27,39 @@
 
 ---
 
+## 现场实录
+
+![现场运行](docs/demo/field-test.gif)
+
+真机运行记录，手机拍摄、未剪辑。完整视频见 **[Release v2.0.0](https://github.com/lss486558354-ship-it/printer-controller/releases/tag/v2.0.0)**。
+
+<table>
+<tr>
+<td width="50%">
+<img src="docs/demo/rig-overview.jpg" alt="整机部署形态">
+<p align="center"><sub><b>设备侧部署形态</b><br>单板机（Ubuntu 22.04 + Xorg）经 VNC 输出 Bambu Studio；旁侧为 USB 转串口与 STM32 控制板</sub></p>
+</td>
+<td width="50%">
+<img src="docs/demo/bambu-studio-slice.jpg" alt="Bambu Studio 切片界面">
+<p align="center"><sub><b>被驱动的目标：Bambu Studio</b><br>模型已排布在热床上，右下角绿色按钮即像素监控检测的 <code>#00AE42</code></sub></p>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<img src="docs/demo/servo-debug-tool.jpg" alt="舵机调试工具">
+<p align="center"><sub><b>GUI 编排工具链</b><br>舵机调试窗口——录制、像素标定、状态机编辑都在这一层的工具里完成</sub></p>
+</td>
+<td width="50%">
+<img src="docs/demo/touchscreen-command.jpg" alt="触屏下发指令">
+<p align="center"><sub><b>触屏下发指令</b><br>现场调试时的操作入口</sub></p>
+</td>
+</tr>
+</table>
+
+> ⚠️ **如实说明**：这些是**未经剪辑的现场记录**，画面里有杂乱的桌面、反光的显示器和来回调整的镜头。它们证明的是「这套系统真的搭起来并跑过」，而不是「它很好看」。录屏级的演示需要 Xorg + 真实打印机，目前没有条件重录。
+
+---
+
 ## 核心特性
 
 | 特性 | 说明 |
@@ -263,6 +296,7 @@ printer-controller/
 ├── setup_hooks/             # 首次运行 / 维护钩子
 ├── install_service.sh       # systemd 服务安装
 ├── mouse_cloud.service      # systemd 单元文件
+├── docs/demo/               # 现场实录静帧与 GIF
 ├── GUIDE.md                 # 完整部署与故障排查指南
 └── CLAUDE.md                # 架构说明（供 AI 协作工具读取）
 ```
